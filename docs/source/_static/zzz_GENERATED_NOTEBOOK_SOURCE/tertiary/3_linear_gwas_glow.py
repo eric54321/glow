@@ -108,7 +108,7 @@ display(results_df.orderBy("pvalue"))
 
 # MAGIC %r
 # MAGIC library(SparkR)
-# MAGIC gwas_df <- read.df('dbfs:/home/william.brandler@databricks.com/genomics/data/delta/simulate_pvcf_linear_gwas_results_confounded.delta', source="delta")
+# MAGIC gwas_df <- read.df('dbfs:/home/eric54321g@gmail.com/genomics/data/delta/simulate_pvcf_linear_gwas_results_confounded.delta', source="delta")
 # MAGIC gwas_results <- select(gwas_df, c(alias(element_at(gwas_df$names, as.integer(1)), "SNP"), 
 # MAGIC                                   cast(alias(gwas_df$contigName, "CHR"), "double"), 
 # MAGIC                                   alias(gwas_df$start, "BP"), alias(gwas_df$pvalue, "P")))
